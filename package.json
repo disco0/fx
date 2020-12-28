@@ -10,10 +10,13 @@
     "fx": "index.js"
   },
   "files": [
-    "*.js"
+    "*.js",
+    "@types"
   ],
+  "types": "@types/index.d.ts",
   "scripts": {
     "test": "ava",
+    "types": "tsc --build ./tsconfig.types.json",
     "build": "pkg . --out-path dist",
     "zip": "cd dist && find . -name 'fx-*' -exec zip '{}.zip' '{}' \\;",
     "release": "release-it --github.release --github.assets=dist/*.zip",

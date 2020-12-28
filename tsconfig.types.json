@@ -1,0 +1,40 @@
+{
+    "files": [
+        // "index.js",
+        "bang.js",
+        "config.js",
+        "find.js",
+        "fx.js",
+        "print.js",
+        "reduce.js",
+        "std.js",
+        "stream.js",
+        "test.js" 
+    ],
+    "exclude": 
+    [
+        "node_modules/**/*.*",
+        "index.js"
+    ],
+    "compilerOptions": 
+    {
+        "allowJs": true,
+
+        "emitDeclarationOnly": true,
+        "declaration": true,
+        "bundledPackageName": "fx",
+        "outFile": "@types/index.d.ts",
+
+        "skipLibCheck": true,
+
+        "moduleResolution": "Node",
+        "module": "commonjs",
+
+        "typeRoots": 
+        [
+            "./node_modules/@types"
+        ],
+
+        "pretty": true
+    }
+}
